@@ -1,15 +1,15 @@
 import './App.scss';
-import Header from './components/Header';
-import Main from './components/Main';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
+import Header from './components/Header';
+import Main from './components/Main';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Main/>,
+    path: '/',
+    element: <Main />,
   },
 ]);
 
