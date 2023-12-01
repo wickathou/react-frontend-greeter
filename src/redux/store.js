@@ -1,18 +1,8 @@
-// import { configureStore } from "@reduxjs/toolkit";
-import dataReducer from "./data/dataSlice";
-
-// export default configureStore({
-//   reducer: {
-//     data: dataReducer
-//   }
-// })
-
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import userReducer from './users/usersSlice'
-// Create the root reducer independently to obtain the RootState type
+import greetingReducer from './greeting/greetingSlice'
+
 const rootReducer = combineReducers({
-  user: userReducer,
-  data: dataReducer
+  greeting: greetingReducer,
 })
 
 export const setupStore = (preloadedState) => {
