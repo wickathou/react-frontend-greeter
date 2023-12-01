@@ -1,18 +1,25 @@
-import './App.scss'
-import Header from './components/Header'
-import Main from './components/Main'
-import UserDisplay from './components/UserDisplay'
+import './App.scss';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+import Header from './components/Header';
+import Main from './components/Main';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Main />,
+  },
+]);
 
 function App() {
-  
-
   return (
     <div className="App">
-      <Header/>
-      <Main/>
-      <UserDisplay/>
+      <Header />
+      <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
