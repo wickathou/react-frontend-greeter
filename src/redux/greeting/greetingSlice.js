@@ -27,8 +27,6 @@ const greetingSlice = createSlice({
   },
 });
 
-// console.log('greetingSlice', state => state.greeting)
-
 export const greetingText = (state) => state.greeting.text;
 export const greetingLoading = (state) => state.greeting.loading;
 
